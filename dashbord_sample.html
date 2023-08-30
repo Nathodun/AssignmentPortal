@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles_sample.css"> <!-- Include your CSS file here -->
+</head>
+<body>
+    <header>
+        <h1>Welcome, John Doe</h1>
+    </header>
+    
+    <main>
+        <section id="upload">
+            <h2>Upload Assignments</h2>
+            <form>
+                <label for="assignment">Choose a file:</label>
+                <input type="file" id="assignment" name="assignment">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <section id="profile">
+            <h2>Profile Details</h2>
+            <div class="profile-details">
+                <p>Name: John Doe</p>
+                <p>Email: john@example.com</p>
+                <p>Faculty: Computer Science</p>
+                <p>Matric No: 123456</p>
+            </div>
+            <button class="edit-button">Edit Profile</button>
+        </section>
+
+        <section id="deadlines">
+            <h2>Deadlines</h2>
+            <ul class="deadline-list">
+                <li><span class="course">Math</span> - Due on 2023-08-15</li>
+                <li><span class="course">Physics</span> - Due on 2023-08-20</li>
+                <!-- Add more deadlines as needed -->
+            </ul>
+        </section>
+
+        <section id="submitted">
+            <h2>Submitted Assignments</h2>
+            <ul class="submission-list">
+                <li><a href="assignment1.pdf" target="_blank">Assignment 1</a></li>
+                <li><a href="assignment2.pdf" target="_blank">Assignment 2</a></li>
+                <!-- Add more submitted assignments as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <button id="logout">Logout</button>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Include your JavaScript file here -->
+</body>
+</html>
